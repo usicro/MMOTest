@@ -33,7 +33,7 @@ public class DataParser {
 			action(incpacket);
 			break;
 		default:
-			System.out.println("Unknown ID: " + id);
+			//insert exception here
 		}
 	}
 

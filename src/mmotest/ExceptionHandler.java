@@ -16,7 +16,7 @@ public class ExceptionHandler {
 		System.out.println(e.toString());
 		e.printStackTrace();
 
-		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd");
 		// get current date time with Date()
 		Date date = new Date();
 		Calendar cal = Calendar.getInstance();
@@ -30,7 +30,7 @@ public class ExceptionHandler {
 			out.append(dateFormat.format(cal.getTime()) + e.toString() + "\n");
 			out.append(dateFormat.format(cal.getTime())
 					+ e.getStackTrace()
-					+ "\n-----------------------------------------------------------\n");
+					+ "\n<-------------------------------NEW ERROR---------------------------->\n");
 			// Close the output stream
 			out.close();
 		} catch (Exception efile) {// Catch exception if any
