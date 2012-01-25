@@ -33,7 +33,7 @@ public class DataParser {
 			action(incpacket);
 			break;
 		default:
-			//insert exception here
+			throw new ExceptionBuilder("Invalid PacketID: " + id);
 		}
 	}
 

@@ -23,7 +23,7 @@ public class ExceptionHandler {
 
 		try {
 			// Create file
-			String filename = dateFormat.format(date);
+			String filename = dateFormat.format(date) + "_exceptions";
 
 			FileWriter fstream = new FileWriter(filepath + filename + ".log", true);
 			BufferedWriter out = new BufferedWriter(fstream);
