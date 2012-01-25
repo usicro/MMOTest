@@ -25,7 +25,7 @@ public class ExceptionHandler {
 			// Create file
 			String filename = dateFormat.format(date);
 
-			FileWriter fstream = new FileWriter(filepath + filename, true);
+			FileWriter fstream = new FileWriter(filepath + filename + ".log", true);
 			BufferedWriter out = new BufferedWriter(fstream);
 			out.append(dateFormat.format(cal.getTime()) + e.toString() + "\n");
 			out.append(dateFormat.format(cal.getTime())
